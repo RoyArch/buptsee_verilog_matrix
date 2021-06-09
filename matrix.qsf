@@ -1,0 +1,83 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2020  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+# Date created = 03:28:13  May 25, 2021
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		matrix_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "MAX II"
+set_global_assignment -name DEVICE EPM1270T144C5
+set_global_assignment -name TOP_LEVEL_ENTITY matrix
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "03:28:13  MAY 25, 2021"
+set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
+set_global_assignment -name VERILOG_FILE para.v
+set_global_assignment -name VERILOG_FILE matOut.v
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name DEVICE_FILTER_PACKAGE TQFP
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 144
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 5
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR "-1"
+set_global_assignment -name POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR 3.3V
+set_global_assignment -name VERILOG_FILE matrix.v
+set_location_assignment PIN_18 -to clk
+set_location_assignment PIN_45 -to col_g[7]
+set_location_assignment PIN_44 -to col_g[6]
+set_location_assignment PIN_43 -to col_g[5]
+set_location_assignment PIN_42 -to col_g[4]
+set_location_assignment PIN_41 -to col_g[3]
+set_location_assignment PIN_40 -to col_g[2]
+set_location_assignment PIN_39 -to col_g[1]
+set_location_assignment PIN_38 -to col_g[0]
+set_location_assignment PIN_22 -to col_r[7]
+set_location_assignment PIN_21 -to col_r[6]
+set_location_assignment PIN_16 -to col_r[5]
+set_location_assignment PIN_15 -to col_r[4]
+set_location_assignment PIN_14 -to col_r[3]
+set_location_assignment PIN_13 -to col_r[2]
+set_location_assignment PIN_12 -to col_r[1]
+set_location_assignment PIN_11 -to col_r[0]
+set_location_assignment PIN_1 -to row[7]
+set_location_assignment PIN_2 -to row[6]
+set_location_assignment PIN_3 -to row[5]
+set_location_assignment PIN_4 -to row[4]
+set_location_assignment PIN_5 -to row[3]
+set_location_assignment PIN_6 -to row[2]
+set_location_assignment PIN_7 -to row[1]
+set_location_assignment PIN_8 -to row[0]
+set_location_assignment PIN_61 -to rst
+set_global_assignment -name VECTOR_WAVEFORM_FILE output_files/matrix.vwf
